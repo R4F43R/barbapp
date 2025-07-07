@@ -1,18 +1,18 @@
 
 import React, { useState, useCallback, useEffect } from 'react';
-import { Appointment, Barber, Service, User } from '@/types';
-import Stepper from '@/components/Stepper';
-import ServiceSelector from '@/components/ServiceSelector';
-import BarberSelector from '@/components/BarberSelector';
-import DateTimePicker from '@/components/DateTimePicker';
-import ConfirmationScreen from '@/components/ConfirmationScreen';
-import SuccessScreen from '@/components/SuccessScreen';
-import { CutIcon, LogoutIcon, UserIcon } from '@/components/icons';
-import AuthScreen from '@/components/AuthScreen';
-import BarberDashboard from '@/components/BarberDashboard';
-import AdminDashboard from '@/components/AdminDashboard';
-import ClientDashboard from '@/components/ClientDashboard';
-import { getBarbers, getAppointmentsForBarber, createAppointment } from '@/services/geminiService';
+import { Appointment, Barber, Service, User } from '@/types.ts';
+import Stepper from '@/components/Stepper.tsx';
+import ServiceSelector from '@/components/ServiceSelector.tsx';
+import BarberSelector from '@/components/BarberSelector.tsx';
+import DateTimePicker from '@/components/DateTimePicker.tsx';
+import ConfirmationScreen from '@/components/ConfirmationScreen.tsx';
+import SuccessScreen from '@/components/SuccessScreen.tsx';
+import { CutIcon, LogoutIcon, UserIcon } from '@/components/icons.tsx';
+import AuthScreen from '@/components/AuthScreen.tsx';
+import BarberDashboard from '@/components/BarberDashboard.tsx';
+import AdminDashboard from '@/components/AdminDashboard.tsx';
+import ClientDashboard from '@/components/ClientDashboard.tsx';
+import { getBarbers, getAppointmentsForBarber, createAppointment } from '@/services/geminiService.ts';
 
 type Step = 'SERVICE' | 'BARBER' | 'DATETIME' | 'CONFIRM' | 'SUCCESS';
 type ClientView = 'dashboard' | 'booking';

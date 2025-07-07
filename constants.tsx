@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Service } from '@/types';
-import { CutIcon, BeardIcon, ScissorAndCombIcon, HotTowelIcon } from '@/components/icons';
+import { Service } from '@/types.ts';
+import { CutIcon, BeardIcon, ScissorAndCombIcon, HotTowelIcon } from '@/components/icons.tsx';
 
 export const SERVICES: Service[] = [
   {
