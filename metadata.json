@@ -1,0 +1,6 @@
+{
+  "name": "Barba Store - Appointment Booker",
+  "description": "An elegant appointment booking application for a high-end barbershop, allowing users to select services, barbers, and schedule a time. It uses Gemini to generate personalized confirmation messages.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
